@@ -2,6 +2,7 @@
 # Bài 1: Nhập 2 số nguyên a và b từ bàn phím.
 # In ra các số nguyên trong khoảng [a, b]
 
+
 # Bài 2: Nhập 2 số nguyên a và b từ bàn phím.
 # In ra các số nguyên trong khoảng [a, b] nếu b >= a
 # In ra các số nguyên trong khoảng [b, a] nếu a > b
