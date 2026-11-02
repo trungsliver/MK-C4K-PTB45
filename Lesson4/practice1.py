@@ -31,3 +31,25 @@ else:
 # Bậc 2:    51kWh - 100kWh         giá 2k VND / kWh
 # Bậc 3:    101kWh - 200kWh        giá 2.3k VND / kWh
 # Bậc 4:    trên 201kWh            giá 3k VND / kWh
+
+# Nhập số điện sử dụng
+kwh = float(input('Nhập số điện bạn sử dụng (kWh): '))
+
+# Khai báo biến tiền điện
+money = 0
+
+# Tính tiền điện
+if 0 < kwh <= 50:
+    money = kwh * 1.8
+elif 50 < kwh <= 100:
+    money = 50 * 1.8 + (kwh - 50) * 2
+elif 100 < kwh <= 200:
+    money = 50 * 1.8 + 50 * 2 + (kwh - 100) * 2.3
+elif kwh > 200:
+    money = 50 * 1.8 + 50 * 2 + 100 * 2.3 + (kwh - 200) * 3
+else:
+    print('Số điện không hợp lệ!')
+
+# Hiển thị kết quả
+if money > 0:
+    print(f'Tiền điện của bạn là: {money}k VND')
